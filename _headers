@@ -1,0 +1,15 @@
+/*
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+
+/maps/*/live/*
+  Cache-Control: no-store, no-cache, must-revalidate
+  Content-Type: application/json
+
+/maps/*/hires/*
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=300
+
+/maps/*/lowres/*
+  Content-Type: image/png
+  Cache-Control: public, max-age=300
